@@ -22,6 +22,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
   </head>
 
   <body>
@@ -40,9 +42,16 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
+            <li class="navbar-home active">
+              <a href="index.html">Home</a></li>
+            <li class="navbar-about">
+              <a href="#about">About</a></li>
+            <li class="navbar-works">
+              <a href="#works">Works</a></li>
+            <li class="navbar-skills">
+              <a href="#skills">Skills</a></li>
+            <li class="navbar-contact">
+              <a href="#contact">Contact</a></li>
           </ul>
         </div>    <!--/.nav-collapse -->
       </div>
@@ -50,7 +59,7 @@
 
 
 	<div id="headerwrap">
-	  <div class="container">
+	  <div class="container headerwrap">
 		  <div class="row">
 			  <div class="col-lg-6 col-lg-offset-3">
 					<h4>HELLO, MY NAME IS</h4>
@@ -62,7 +71,7 @@
 	</div>       <!--/headerwrap -->
 
   <section id="about"></section>
-  <div class="container">
+  <div class="container about">
     <div class="row centered mt">
         <h1 class="mb">Hi, I'M MICHAEL HARRY MILLER</h1>
       <div class="col-lg-2 col-lg-offset-1">
@@ -77,90 +86,70 @@
   </div>       <!--/container -->
 
 	<section id="works"></section>
-	<div class="container">
+	<div class="container works">
 		<div class="row centered mt mb">
 			<h1>PORTFOLIO:</h1>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
-				<a href="work.html"><img src="assets/img/portfolio/folio01.png" class="img-responsive"></a>
+
+			<div class="col-lg-6 col-md-6 col-sm-6 gallery">
+        <h3>Quorum</h3>
+				<a href="work.html">
+          <img src="assets/img/portfolio/folio01.png"
+               class="img-responsive work-pic"></a>
         <h6>A question and answer hub.</h6>
         <h6>Rails + React.js + PostgreSQL</h6>
       </div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
-				<a href="work.html"><img src="assets/img/portfolio/folio02.png" class="img-responsive"></a>
+
+			<div class="col-lg-6 col-md-6 col-sm-6 gallery">
+        <h3>Active ORM</h3>
+
+        <a href="work.html">
+          <img src="assets/img/portfolio/folio02.png"
+               class="img-responsive work-pic"></a>
         <h6>A flexible ORM.</h6>
         <h6>Ruby</h6>
       </div>
-			<div class="col-lg-4 col-md-4 col-sm-4 gallery">
-				<a href="work.html"><img src="assets/img/portfolio/folio03.png" class="img-responsive"></a>
-			</div>
+
+			<!-- <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+				<a href="work.html">
+          <img src="assets/img/portfolio/folio03.png"
+               class="img-responsive"></a>
+			</div> -->
+
 		</div>   <!--/row -->
 	</div>     <!--/container -->
 
-  <div class="container">
+  <section id="skills"></section>
+  <div class="container skills">
     <div class="row centered mt mb">
       <h1>TECHNOLOGIES + COMPETENCIES: </h1>
     </div>
     <div class="row centered skills">
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/ruby.png">
-        <h6>Ruby</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/rails.png">
-        <h6>Ruby on Rails</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/postgresql.png">
-        <h6>PostgreSQL</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/javascript.png">
-        <h6>JavaScript</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/jquery.png">
-        <h6>jQuery</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/react.png">
-        <h6>React.js</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/rspec.png">
-        <h6>Rspec</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/git.png">
-        <h6>Git</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/github.png">
-        <h6>Github</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/HTML5.png">
-        <h6>HTML5</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2">
-        <img src="assets/img/skills/css.png" alt="CSS 3">
-        <h6>CSS3</h6>
-      </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 mb">
-        <img src="assets/img/skills/aws.png">
-        <h6>AWS</h6>
-      </div>
-    </div>   <!-- row -->
-  </div>     <!--/container -->
+      <!-- Badges for skills -->
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/ruby.png"><h6>Ruby</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/rails.png"><h6>Ruby on Rails</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/postgresql.png"><h6>PostgreSQL</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/javascript.png"><h6>JavaScript</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/jquery.png"><h6>jQuery</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/react.png"><h6>React.js</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/rspec.png"><h6>Rspec</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/git.png"><h6>Git</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/github.png"><h6>Github</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/HTML5.png"><h6>HTML5</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2"><img src="assets/img/skills/css.png" alt="CSS 3"><h6>CSS3</h6></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 mb"><img src="assets/img/skills/aws.png"><h6>AWS</h6></div>
+    </div>
+  </div>
 
+  <section id="contact"></section>
   <div id="social">
-		<div class="container">
+		<div class="container contact">
 			<div class="row centered">
 				<div class="col-lg-6">
-					<a href="http://github.com/m-h-miller"><i class="fa fa-github"></i></a>
-				</div>
+          <a href="http://github.com/m-h-miller"><i class="fa fa-github"></i></a>
+        </div>
 				<div class="col-lg-6">
-					<a href="https://www.linkedin.com/in/mhmiller1"><i class="fa fa-linkedin"></i></a>
-				</div>
+          <a href="https://www.linkedin.com/in/mhmiller1"><i class="fa fa-linkedin"></i></a>
+        </div>
 			</div>   <!--/row -->
 		</div>     <!--/container -->
 	</div>       <!--/social -->
@@ -175,7 +164,7 @@
 					<p>Based in Manhattan, NY.</p>
 				</div>
 				<div class="col-lg-4">
-					<p>mimill@sas.upenn.edu</p>
+					<a class="email" href="mailto:m.harry.miller@gmail.com">m.harry.miller@gmail.com</p>
 				</div>
 			</div>
 		</div>
@@ -186,5 +175,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Highlighting active navbar zone w/ jQuery -->
+    <script src="assets/js/navbar.js"></script>
+
+
   </body>
 </html>
