@@ -43,8 +43,12 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="active"><a href="#works">Works</a></li>
+            <li class="navbar-contact">
+              <a href="assets/resume/resume.pdf" target="_blank"> Resume </a>
+            </li>
+            <li class="active">
+              <a href="index.html#works">Works</a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -64,25 +68,28 @@
 	    </div>
 	</div>        -->
 
+  <div class="row centered mt">
 	<canvas></canvas>
+</div>
 
+  <script type="application/javascript" src="./js-asteroids/lib/util.js"></script>
+  <script type="application/javascript" src="./js-asteroids/lib/movingObject.js"></script>
+  <script type="application/javascript" src="./js-asteroids/lib/asteroid.js"></script>
+  <!-- <script type="application/javascript" src="./js-asteroids/lib/bullet.js"></script>
+  <script type="application/javascript" src="./js-asteroids/lib/ship.js"></script> -->
+  <script type="application/javascript" src="./js-asteroids/lib/game.js"></script>
+  <script type="application/javascript" src="./js-asteroids/lib/gameView.js"></script>
 
-	<script src="assets/js/asteroids/lib/utils.js"></script>
-  <script src="assets/js/asteroids/lib/movingObject.js"></script>
-  <script src="assets/js/asteroids/lib/asteroid.js"></script>
-  <!-- <script src="./lib/bullet.js"></script>
-  <script src="./lib/ship.js"></script> -->
-  <script src="assets/js/asteroids/lib/game.js"></script>
+  <script type="application/javascript">
+     canvas = document.getElementsByTagName("canvas")[0];
+     canvas.height = 525;
+     canvas.width = 800;
+     canvas.style.background = "#DDD";
 
-	<script>
-	   canvasEl = document.getElementsByTagName("canvas")[0];
-	   canvasEl.height = window.innerHeight;
-	   canvasEl.width = window.innerWidth;
+     var ctx = canvas.getContext("2d");
+     var game = new Asteroids.Game();
+     new Asteroids.gameView(game, ctx).start();
   </script>
-
-	<script src="assets/js/asteroids/lib/gameView.js"></script>
-
-	<script> window.Asteroids.gameView.start(); </script>
 
 	<section id="works"></section>
 	<div class="container">
@@ -90,7 +97,6 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4 class="mb">ABOUT THE PROJECT</h4>
         <p>Asteroids, built in Vanilla JavaScript.</p>
-          Employs JavaScripts's prototypical inheritance.
 			</div>
 			<!-- <div class="col-lg-10 col-lg-offset-1 mt">
 				<img class="img-responsive" src="assets/img/pr01.jpg">
